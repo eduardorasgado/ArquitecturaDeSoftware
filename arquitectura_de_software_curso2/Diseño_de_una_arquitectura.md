@@ -122,7 +122,7 @@ Usualmente los frameworks ya traen asociadas tácticas asociadas al escenario qu
 
 ## Escenarios: Disponibilidad, detección, reparación
 
-## Escenario de disponibilidad. 
+## Escenario de disponibilidad:
 En este caso el estimulo es la falla, algo pasó que compromete la disponibilidad. vamos a ver las diferentes tácticas que podemos usar para trabajar con este posible escenario.
 
 ## Detección:
@@ -137,10 +137,12 @@ En este caso contamos con varias tácticas, la primera es la de
 Como podemos estar listos para que si algo falla podamos recuperar rápidamente el sistema.
 
 o Votación, El algoritmo de votación puede ser “reglas de mayoría” o “componente preferido” o algún otro algoritmo. Este método se usa para corregir el funcionamiento defectuoso de algoritmos o fallas de un procesador y se usa a menudo en sistemas de control.
-o Redundancia activa, Cuando se produce una falla, el tiempo de inactividad de los sistemas que utilizan esta táctica suele ser de milisegundos, ya que la copia de seguridad es actual y el único momento de recuperación es el tiempo de conmutación. La redundancia activa a menudo se utiliza en una configuración cliente / servidor, como los sistemas de administración de bases de datos, donde las respuestas rápidas son necesarias incluso cuando ocurre una falla.
-o Redundancia pasiva, Un componente (el primario) responde a los eventos e informa a los otros componentes (los recursos) de las actualizaciones de estado que deben realizar. Cuando ocurre una falla, el sistema primero debe asegurarse de que el estado de la copia de seguridad sea lo suficientemente reciente antes de reanudar los servicios.
-o Repuesto, Una plataforma de computación de reserva en espera está configurada para reemplazar muchos componentes diferentes que fallaron. Debe reiniciarse a la configuración de software apropiada y debe tener su estado inicializado cuando ocurre una falla.
 
+o Redundancia activa, Cuando se produce una falla, el tiempo de inactividad de los sistemas que utilizan esta táctica suele ser de milisegundos, ya que la copia de seguridad es actual y el único momento de recuperación es el tiempo de conmutación. La redundancia activa a menudo se utiliza en una configuración cliente / servidor, como los sistemas de administración de bases de datos, donde las respuestas rápidas son necesarias incluso cuando ocurre una falla.
+
+o Redundancia pasiva, Un componente (el primario) responde a los eventos e informa a los otros componentes (los recursos) de las actualizaciones de estado que deben realizar. Cuando ocurre una falla, el sistema primero debe asegurarse de que el estado de la copia de seguridad sea lo suficientemente reciente antes de reanudar los servicios.
+
+o Repuesto, Una plataforma de computación de reserva en espera está configurada para reemplazar muchos componentes diferentes que fallaron. Debe reiniciarse a la configuración de software apropiada y debe tener su estado inicializado cuando ocurre una falla.
 
 ## Reintroducción
 
