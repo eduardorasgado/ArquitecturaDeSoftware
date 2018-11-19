@@ -65,14 +65,16 @@ Ayuda a distribuir un mensaje a muchos componentes a través de un solo conector
 El conector de evento es la comunicación entre un componente a otro, el de distribuidor es similar pero se encarga de recibir el mensaje de un componente y enviarlo a muchos componentes.
 
 ----------------------------------
+# CONECTORES
 
-## Conectores: Llamado asincrónico / sincrónico. Modelo Cliente servidor.
+## Llamado asíncrono:
+Un componente llama a otro y luego evalúan la respuesta cuándo la necesitan, no espera respuesta para poder continuar.
 
-Llamado asíncrono, un componente llama a otro y luego evalúan la respuesta cuándo la necesitan, no espera respuesta para poder continuar.
+## Llamado sincrónico: 
+El emisor espera y no sigue ejecutando hasta que recibe resultado por parte del receptor.
 
-Llamado sincrónico, el emisor espera y no sigue ejecutando hasta que recibe resultado por parte del receptor.
-
-Cliente / servidor: La comunicación va a ser siempre del cliente hacia el servidor, la diferencia en este caso con respecto a los llamados síncronos, es que el cliente no sabe exactamente quien es el servidor. Trata de la forma en que están distribuidos los componentes.
+## Modelo Cliente / servidor: 
+La comunicación va a ser siempre del cliente hacia el servidor, la diferencia en este caso con respecto a los llamados síncronos, es que el cliente no sabe exactamente quien es el servidor. Trata de la forma en que están distribuidos los componentes.
 
 - Cliente: es  el  proceso  que  permite  al  usuario  formular  los  requerimientos  y  pasarlos  al  servidor, se le conoce con el término front-end
 
@@ -89,18 +91,12 @@ Las  funciones  que  lleva  a  cabo  el  proceso  servidor  se  resumen  en  los
 
 •Procesar la lógica de la aplicación y realizar validaciones a nivel de bases de datos. 
 
---------------------------------
-
-Conectores:
-
 ## Enrutador:
 Facilita la conexión entre un componente que emite un mensaje y un set de componentes que les interesa el mensaje.
 El enrutador entiende el mensaje y sabe a quien le tiene que llegar.
 
 ## Difusión:
 Dado un mensaje de un emisor lo difunde a muchos otros de componentes interesados.
-
-Conectores: Pizarra, repositorio, colas, modelo PUBSUB
 
 ## Colas: 
 Sirve cuando tenemos un productor tiene mas velocidad que un consumidor, para eso se agenda el procesamiento de cada mensaje, por lo que el consumidor va leyendo los mensajes a la velocidad que él se lo permite.
