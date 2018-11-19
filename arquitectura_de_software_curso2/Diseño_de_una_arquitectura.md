@@ -99,4 +99,12 @@ El enrutador entiende el mensaje y sabe a quien le tiene que llegar.
 
 ##Difusión:
 Dado un mensaje de un emisor lo difunde a muchos otros de componentes interesados.
+----------------------------------
+Conectores: Pizarra, repositorio, colas, modelo PUBSUB
 
+• Colas: Sirve cuando tenemos un productor tiene mas velocidad que un consumidor, para eso se agenda el procesamiento de cada mensaje, por lo que el consumidor va leyendo los mensajes a la velocidad que él se lo permite.
+
+• Pizarra/repositorio: Está orientado a escribir o leer datos de un componente que funciona como base de datos.
+
+• Modelo PUBSUB (Publicar-Suscribir):
+Permite mandar mensaje de un componente que publica eventos a otro que se suscriba a esos eventos, sin que estos componentes se conozcan entre sí.
