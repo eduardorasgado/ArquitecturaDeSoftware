@@ -74,8 +74,18 @@ Llamado sincrónico, el emisor espera y no sigue ejecutando hasta que recibe res
 
 Cliente / servidor: La comunicación va a ser siempre del cliente hacia el servidor, la diferencia en este caso con respecto a los llamados síncronos, es que el cliente no sabe exactamente quien es el servidor. Trata de la forma en que están distribuidos los componentes.
 
-Cliente: es  el  proceso  que  permite  al  usuario  formular  los  requerimientos  y  pasarlos  al  servidor, se le conoce con el término front-end
+- Cliente: es  el  proceso  que  permite  al  usuario  formular  los  requerimientos  y  pasarlos  al  servidor, se le conoce con el término front-end
 
-Servidor: Es  el  proceso  encargado  de  atender  a  múltiples  clientes  que  hacen  peticiones  de  algún  recurso administrado por él. Al proceso servidor se le conoce con el término back-end
+- Servidor: Es  el  proceso  encargado  de  atender  a  múltiples  clientes  que  hacen  peticiones  de  algún  recurso administrado por él. Al proceso servidor se le conoce con el término back-end
 
+
+Las  funciones  que  lleva  a  cabo  el  proceso  servidor  se  resumen  en  los  siguientes  puntos: 
+
+•Aceptar los requerimientos de bases de datos que hacen los clientes.  
+
+•Procesar requerimientos de bases de datos.  
+
+•Formatear datos para trasmitirlos a los clientes. 
+
+•Procesar la lógica de la aplicación y realizar validaciones a nivel de bases de datos. 
 
