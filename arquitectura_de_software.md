@@ -384,10 +384,7 @@ Arquitectura Hexagonal
 
 La arquitectura hexagonal, es un estilo de arquitectura que mueve el foco de un programador desde un plano más conceptual hacia 
 la distinción entre el interior y el exterior del software. 
-  ___
- / _ \ 
-| |_| |
- \___/  core domain | domain | application | framework
+  core domain | domain | application | framework
 
 La parte interior son los casos prácticos y el modelo domain está construido sobre ello. La parte exterior es UI, base de datos, 
 mensajería, etc. La conexión entre el interior y el exterior es mediante puertos, y su implementación equivalente se conocen como adaptadores. 
@@ -473,9 +470,9 @@ Pararse en hombros de gigantes
 
 Aprovechar el conocimiento existente para nuestra solución.
 
--Productos ya hechos
--Frameworks
--Arquitecturas específicas del dominio
--Patrones de arquitectura
+- Productos ya hechos
+- Frameworks
+- Arquitecturas específicas del dominio
+- Patrones de arquitectura
 
-Diseñar una arquitectura a medida de nuestras necesidades
+Diseñar una arquitectura a medida de nuestras necesidades.
