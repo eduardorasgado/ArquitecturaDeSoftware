@@ -104,6 +104,18 @@ Sirve cuando tenemos un productor tiene mas velocidad que un consumidor, para es
 ## Pizarra/repositorio:
 Está orientado a escribir o leer datos de un componente que funciona como base de datos.
 
-## Modelo PUBSUB (Publicar-Suscribir):
+## Modelo PUBSUB (Publicar-Subscribir):
 Permite mandar mensaje de un componente que publica eventos a otro que se suscriba a esos eventos, sin que estos componentes se conozcan entre sí.
+Se conectan a través de un bus de eventos. Importante en arquitecturas distribuidas.
 
+# Escenarios y tácticas
+
+Framework de diseño orieintado a atributos: Nos plantea una estructura de escenarios y tácticas donde cada escenario nos ayuda a relacionar
+atributos con varias tácticas de implementacion que hablan de como la solucion mejora el atributo de calidad.
+
+Estímulo -> Táctica para controlar la respuesta -> respuesta
+
+Un framework: entorno de trabajo es un conjunto estandarizado de conceptos, prácticas y criterios para enfocar un tipo de problemática
+ particular que sirve como referencia, para enfrentar y resolver nuevos problemas de índole similar.
+
+Usualmente los frameworks ya traen asociadas tácticas asociadas al escenario que ayudan a resolver atributos de calidad.
