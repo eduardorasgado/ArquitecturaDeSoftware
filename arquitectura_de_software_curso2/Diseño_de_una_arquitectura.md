@@ -89,3 +89,14 @@ Las  funciones  que  lleva  a  cabo  el  proceso  servidor  se  resumen  en  los
 
 •Procesar la lógica de la aplicación y realizar validaciones a nivel de bases de datos. 
 
+--------------------------------
+
+Conectores:
+
+##Enrutador:
+Facilita la conexión entre un componente que emite un mensaje y un set de componentes que les interesa el mensaje.
+El enrutador entiende el mensaje y sabe a quien le tiene que llegar.
+
+##Difusión:
+Dado un mensaje de un emisor lo difunde a muchos otros de componentes interesados.
+
