@@ -99,7 +99,7 @@ El enrutador entiende el mensaje y sabe a quien le tiene que llegar.
 
 ## Difusión:
 Dado un mensaje de un emisor lo difunde a muchos otros de componentes interesados.
-----------------------------------
+
 Conectores: Pizarra, repositorio, colas, modelo PUBSUB
 
 ## Colas: 
