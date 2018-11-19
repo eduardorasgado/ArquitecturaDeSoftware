@@ -119,3 +119,19 @@ Un framework: entorno de trabajo es un conjunto estandarizado de conceptos, prá
  particular que sirve como referencia, para enfrentar y resolver nuevos problemas de índole similar.
 
 Usualmente los frameworks ya traen asociadas tácticas asociadas al escenario que ayudan a resolver atributos de calidad.
+
+## Escenarios: Disponibilidad, detección, reparación
+
+## Escenario de disponibilidad. 
+En este caso el estimulo es la falla, algo pasó que compromete la disponibilidad. vamos a ver las diferentes tácticas que podemos usar para trabajar con este posible escenario.
+
+## Detección:
+En este caso contamos con varias tácticas, la primera es la de ping / eco. que se trata de como un componente envía un mensaje genérico a otro componente para saber si el otro componente esta disponible o no. Latido, esta táctica es similar pero en vez de que haya interacción entre dos componentes, cada uno de estos envían una señal propia que indica que continua activo. Excepciones.
+
+## Recuperación:
+Como podemos estar listos para que si algo falla podamos recuperar rápidamente el sistema.
+
+## Reintroducción
+
+## Prevención:
+Qué podemos hacer para prevenir el estado de falta de disponibilidad.
