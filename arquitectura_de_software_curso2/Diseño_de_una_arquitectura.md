@@ -221,3 +221,31 @@ Cohesión: La cohesión es la medida en la que un componente se dedica a realiza
 Acoplamiento: El acoplamiento es la medida en que los cambios de un componente tiende a necesitar cambios de otro componente. (Cuando modificamos los atributos de una clase, se tienen que modificar los atributos de otra clase.)
 De ahi que debemos de buscar siempre una ALTA COHESIÓN y BAJO ACOPLAMIENTO.
 
+## Escenarios: Eficiencia de Ejecución
+
+Tenemos eventos, trabajamos con tácticas para controlar la eficiencia para dar una respuesta dentro del tiempo esperado. Las tácticas son 3 grandes familias:
+
+## Demanda de recursos: 
+Cuando entra un evento cómo hacemos para que tenga los recursos disponibles y cuántos de ellos necesita.
+
+-Mejorar la eficiencia computacional: Analizar los puntos donde no estamos siendo eficientes (recorrer listas)
+
+-Reducir sobrecarga: Cuántos pasos necesitamos para responder a un mismo evento y si podemos reducirla
+
+-Manejar tasa de eventos: Cuántos eventos emitimos a un componente específico y saber si podemos reducir esa taza. (Filtrado de stream de datos)
+
+-Frecuencia de muestreo: Tiene que ver con el componente consumidor. Procesamos los eventos de manera agrupada en tareas únicas.
+
+## Gestión de recursos:
+Cuántos ponemos disponibles y cómo hacemos para que estén disponibles cuando se necesitan ¿Cómo aprovechamos nuestros recursos dentro de nuestros propios recursos?
+
+-Concurrencia: Cómo paralelizar nuestro sistema (Data science)
+
+-Replicas: Cómo duplicamos el procesamiento o datos para mayor eficiencia (Caché, copias)
+
+-Aumentar recursos: Poder medir y saber cuándo crecer nuestros recursos (Amazon)
+
+## Arbitraje de recursos:
+En caso de conflicto de eventos requiriendo los mismos recursos saber cómo y a quien administrar el recurso por orden de prioridad.
+
+-Políticas de planificación de tareas: Decisión de dónde responden mis recursos ante eventos o si las postergo y agendo. Depende del orden, prioridad, entre otras cosas. (Aplicado a BD)
