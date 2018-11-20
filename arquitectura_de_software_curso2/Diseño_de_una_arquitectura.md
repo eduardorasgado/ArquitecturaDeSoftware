@@ -144,7 +144,7 @@ o Redundancia pasiva, Un componente (el primario) responde a los eventos e infor
 
 o Repuesto, Una plataforma de computación de reserva en espera está configurada para reemplazar muchos componentes diferentes que fallaron. Debe reiniciarse a la configuración de software apropiada y debe tener su estado inicializado cuando ocurre una falla.
 
-## Reintroducción
+## Reintroducción:
 
 Hay tácticas de reparación que se basan en la reintroducción de componentes. Cuando un componente redundante falla, puede reintroducirse después de haber sido corregido. Tales tácticas son el funcionamiento en la sombra, la resincronización del estado y la reversión.
 
@@ -163,3 +163,24 @@ o Remoción del servicio. Esta táctica elimina un componente del sistema de la 
 o Transacciones. Una transacción es la agrupación de varios pasos secuenciales, de modo que todo el paquete se puede deshacer a la vez. Las transacciones se utilizan para evitar que cualquier dato se vea afectado si falla un paso de un proceso y también para evitar colisiones entre varios subprocesos simultáneos que acceden a los mismos datos.
 
 o Monitor de proceso. Una vez que se ha detectado un error en un proceso, un proceso de supervisión puede eliminar el proceso no productivo y crear una nueva instancia del mismo, inicializado en un estado apropiado como en la táctica de repuesto.
+
+## Escenarios: Mantenibilidad
+
+## CONFINAR MODIFICACIONES
+Aunque no existe necesariamente una relación precisa entre la cantidad de módulos afectados por un conjunto de cambios y el costo de implementar dichos cambios, restringir las modificaciones a un pequeño conjunto de módulos generalmente reducirá el costo. El objetivo de las tácticas en este conjunto es asignar responsabilidades a los módulos durante el diseño de modo que los cambios previstos tengan un alcance limitado.
+
+## PREVENIR EFECTOS DOMINÓ
+Un efecto dominó de una modificación es la necesidad de realizar cambios en los módulos que no se ven afectados directamente por él. Por ejemplo, si se modifica el módulo A para lograr una modificación particular, entonces el módulo B se cambia solo por el cambio al módulo A. B debe modificarse porque depende, en cierto sentido, de A.
+
+## DIFERIR ENLACE
+Aplazar el tiempo de enlace es compatible con los escenarios previamente mencionados a costa de requerir infraestructura adicional para admitir el enlace tardío
+
+Alta cohesión, bajo acoplamiento
+
+Alta cohesion: Pocas responsabildades, muy relacionadas.
+Bajo acoplamiento: Poca dependencia entre componentes.
+
+Cohesión: La cohesión es la medida en la que un componente se dedica a realizar solo la tarea para la cual fue creado, delegando las tareas complementarias a otros componentes. (Una clase debe de hacer lo que respecta a su entidad, y no hacer acciones que involucren a otra clase ó entidad).
+
+Acoplamiento: El acoplamiento es la medida en que los cambios de un componente tiende a necesitar cambios de otro componente. (Cuando modificamos los atributos de una clase, se tienen que modificar los atributos de otra clase.)
+De ahi que debemos de buscar siempre una ALTA COHESIÓN y BAJO ACOPLAMIENTO.
