@@ -194,6 +194,18 @@ Trabaja específicamente con las dependencias. Un efecto dominó de una modifica
 ## DIFERIR ENLACE
 Aplazar el tiempo de enlace es compatible con los escenarios previamente mencionados a costa de requerir infraestructura adicional para admitir el enlace tardío
 
+Diferir enlace: Cómo hacer para que un cambio en código no requiere hacer un despliegue de toda nuestra aplicación. Aplazar el tiempo de enlace es compatible con los escenarios previamente mencionados a costa de requerir infraestructura adicional para admitir el enlace tardío (Importante aplicación en Programación orientada a objetos)
+
+-Registro en ejecución – Permite desplegar servicios independientemente.
+
+-Archivos de configuración – Sirven para saber cómo conectar varias partes (nuestros módulos deben depender de interfaces). (arquitectura plug-ins)
+
+-Polimorfismo – Es el que un objeto pueda comportarse de manera diferente dependiendo de su estado. (el estado “state”)
+
+-Remplazo de componentes – Capacidad de desplegar componentes sin necesidad de cambiar (el enlace y los componentes deben ser diferidos a la carga de la aplicación)
+
+-Adherir a protocolos – Permite tener un protocolo claro entre dos módulos sin necesidad de conocer la instancia específica
+
 ### Alta cohesión, bajo acoplamiento
 
 Alta cohesion: Pocas responsabildades, muy relacionadas.
