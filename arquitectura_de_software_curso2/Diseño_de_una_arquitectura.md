@@ -169,13 +169,32 @@ o Monitor de proceso. Una vez que se ha detectado un error en un proceso, un pro
 ## CONFINAR MODIFICACIONES
 Aunque no existe necesariamente una relación precisa entre la cantidad de módulos afectados por un conjunto de cambios y el costo de implementar dichos cambios, restringir las modificaciones a un pequeño conjunto de módulos generalmente reducirá el costo. El objetivo de las tácticas en este conjunto es asignar responsabilidades a los módulos durante el diseño de modo que los cambios previstos tengan un alcance limitado.
 
+Coherencia semántica -> Abstraer servicios comunes.
+
+Generalizar -> Estabilizar los conceptos mas generales para luego pasar a los específicos.
+
+Limitar Opciones
+
+Anticipar cambios -> Prepararnos estrategicamente de como incorporar nuevos cambios antes de necesitarlos.
+
+
 ## PREVENIR EFECTOS DOMINÓ
 Un efecto dominó de una modificación es la necesidad de realizar cambios en los módulos que no se ven afectados directamente por él. Por ejemplo, si se modifica el módulo A para lograr una modificación particular, entonces el módulo B se cambia solo por el cambio al módulo A. B debe modificarse porque depende, en cierto sentido, de A.
+
+Trabaja específicamente con las dependencias. Un efecto dominó de una modificación es la necesidad de realizar cambios en los módulos que no se ven afectados directamente por él. Por ejemplo, si se modifica el módulo A para lograr una modificación particular, entonces el módulo B se cambia solo por el cambio al módulo A. B debe modificarse porque depende, en cierto sentido, de A. (Importante aplicación en Programación orientada a objetos)
+
+-Ocultar información – Capacidad de ocultar información para no depender de esa información puntual y más bien de un interfaz visual que serpa dependiente de los cambios.
+
+-Mantener la interfaz – Interfaz clara para entender una dependencia, un único llamado (Pasos en un cálculo de impuestos) sirve en cambios sintácticos.
+
+-Restringir comunicación Evitar las cadenas de llamadas a objetos interminables, restringimos comunicación solamente a módulos que realmente necesitemos. (Ley de menor conocimiento)
+
+-Intermediarios Punto de compatibilidad de un módulo con otro. (Patrón proxy, adapter, etc.)
 
 ## DIFERIR ENLACE
 Aplazar el tiempo de enlace es compatible con los escenarios previamente mencionados a costa de requerir infraestructura adicional para admitir el enlace tardío
 
-Alta cohesión, bajo acoplamiento
+### Alta cohesión, bajo acoplamiento
 
 Alta cohesion: Pocas responsabildades, muy relacionadas.
 Bajo acoplamiento: Poca dependencia entre componentes.
@@ -184,3 +203,4 @@ Cohesión: La cohesión es la medida en la que un componente se dedica a realiza
 
 Acoplamiento: El acoplamiento es la medida en que los cambios de un componente tiende a necesitar cambios de otro componente. (Cuando modificamos los atributos de una clase, se tienen que modificar los atributos de otra clase.)
 De ahi que debemos de buscar siempre una ALTA COHESIÓN y BAJO ACOPLAMIENTO.
+
