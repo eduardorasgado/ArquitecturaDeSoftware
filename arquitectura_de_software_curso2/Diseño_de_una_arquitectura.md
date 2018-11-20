@@ -156,4 +156,10 @@ o Punto de control / retroceso. Un punto de control es una grabación de un esta
 
 ## Prevención:
 Qué podemos hacer para prevenir el estado de falta de disponibilidad.
+Prevención, Las siguientes son algunas tácticas de prevención de fallas.
 
+o Remoción del servicio. Esta táctica elimina un componente del sistema de la operación para someterse a algunas actividades para evitar fallas anticipadas. Un ejemplo es reiniciar un componente para evitar que las pérdidas de memoria causen una falla.
+
+o Transacciones. Una transacción es la agrupación de varios pasos secuenciales, de modo que todo el paquete se puede deshacer a la vez. Las transacciones se utilizan para evitar que cualquier dato se vea afectado si falla un paso de un proceso y también para evitar colisiones entre varios subprocesos simultáneos que acceden a los mismos datos.
+
+o Monitor de proceso. Una vez que se ha detectado un error en un proceso, un proceso de supervisión puede eliminar el proceso no productivo y crear una nueva instancia del mismo, inicializado en un estado apropiado como en la táctica de repuesto.
