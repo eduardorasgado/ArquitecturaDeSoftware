@@ -249,3 +249,34 @@ Cuántos ponemos disponibles y cómo hacemos para que estén disponibles cuando 
 En caso de conflicto de eventos requiriendo los mismos recursos saber cómo y a quien administrar el recurso por orden de prioridad.
 
 -Políticas de planificación de tareas: Decisión de dónde responden mis recursos ante eventos o si las postergo y agendo. Depende del orden, prioridad, entre otras cosas. (Aplicado a BD)
+
+## Seguridad 
+
+Nuestro estimulo de entrada es un ataque, nuestras tácticas para controlar la seguridad y tener como resultado la detección, resistencia o recuperación en nuestro sistema. Tendremos tres familias:
+
+## Detectar ataques: 
+Van a tratar de identificar que el estado actual de la aplicación está bajo un ataque, puede ser por medio de sensores.
+
+-Detectores de intrusos: Ayuda a tener implementaciones para saber cuándo se está usando de manera no apropiada. Levantará alertas para tomar decisiones sobre nuestro sistema (pueden ser complejas, automatizadas o simples). Podremos ir descendiendo en niveles cuanto más complejo sea.
+
+Recuperación de ataques: Trata de tener bases o tácticas para regresar a un estado basal y también poder comprender cuáles fueron las acciones del atacante para poder evitarlas a futuro
+
+-Restauración: Cómo hacemos para entender nuestros estados del sistema y entender qué pasa con mi sistema. Es muy similar a la estrategia de Disponibilidad (estados conocidos, estados diferentes para comparar)
+
+-Identificación: Saber qué específicamente hizo el atacante. La traza de auditoria sirve para que cuando detectamos un atacante tengamos todo el rastro de nuestro usuario y poder restablecer mi sistema a ese punto basal, ignorando lo que hizo el atacante
+
+## Resistencia de ataques: 
+Va a tratar que el atacante no tenga éxito.
+
+-Autenticación: Cómo sabemos que el usuario es quien realmente die ser (Contraseñas, datos biométricos, RS, etc.)
+
+-Autorización: Saber quién es y qué puede o no hacer esa persona (Roles entre sistemas)
+
+-Confidencialidad de datos: Cómo garantizamos que el dato sea visto por quien debe verlo (encriptación)
+
+-Integridad: Cómo garantizo que el mensaje es íntegro, es decir, cómo el emisor lo envió (Hashes para comprobar información)
+
+-Limitar exposición: Si un atacante entra podemos determinar que este no pueda (por lo menos) entrar a consultar la información más sensible del usuario. Lo podemos hacer separando información (separar info sensible de info “normal”).
+
+-Limitar acceso: Entender cuáles son los vectores de acceso y restringir lo menor posible esos accesos que pueden ser puntos iniciales de penetración (Puertos de red: 8080, SSH, etc.)
+
