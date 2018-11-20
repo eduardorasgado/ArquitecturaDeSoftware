@@ -146,5 +146,14 @@ o Repuesto, Una plataforma de computación de reserva en espera está configurad
 
 ## Reintroducción
 
+Hay tácticas de reparación que se basan en la reintroducción de componentes. Cuando un componente redundante falla, puede reintroducirse después de haber sido corregido. Tales tácticas son el funcionamiento en la sombra, la resincronización del estado y la reversión.
+
+o Modo sombra. Un componente previamente fallido puede ejecutarse en “modo sombra” durante un corto período de tiempo para asegurarse de que imita el comportamiento de los componentes en funcionamiento antes de restaurarlo al servicio.
+
+o Resincronización del estado. Las tácticas de redundancia pasiva y activa requieren que el componente que se está restaurando tenga su estado actualizado antes de su regreso al servicio.
+
+o Punto de control / retroceso. Un punto de control es una grabación de un estado consistente creado periódicamente o en respuesta a eventos específicos.
+
 ## Prevención:
 Qué podemos hacer para prevenir el estado de falta de disponibilidad.
+
