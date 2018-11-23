@@ -183,13 +183,13 @@ Un efecto dominó de una modificación es la necesidad de realizar cambios en lo
 
 Trabaja específicamente con las dependencias. Un efecto dominó de una modificación es la necesidad de realizar cambios en los módulos que no se ven afectados directamente por él. Por ejemplo, si se modifica el módulo A para lograr una modificación particular, entonces el módulo B se cambia solo por el cambio al módulo A. B debe modificarse porque depende, en cierto sentido, de A. (Importante aplicación en Programación orientada a objetos)
 
--Ocultar información – Capacidad de ocultar información para no depender de esa información puntual y más bien de un interfaz visual que serpa dependiente de los cambios.
+- Ocultar información – Capacidad de ocultar información para no depender de esa información puntual y más bien de un interfaz visual que serpa dependiente de los cambios.
 
--Mantener la interfaz – Interfaz clara para entender una dependencia, un único llamado (Pasos en un cálculo de impuestos) sirve en cambios sintácticos.
+- Mantener la interfaz – Interfaz clara para entender una dependencia, un único llamado (Pasos en un cálculo de impuestos) sirve en cambios sintácticos.
 
--Restringir comunicación Evitar las cadenas de llamadas a objetos interminables, restringimos comunicación solamente a módulos que realmente necesitemos. (Ley de menor conocimiento)
+- Restringir comunicación Evitar las cadenas de llamadas a objetos interminables, restringimos comunicación solamente a módulos que realmente necesitemos. (Ley de menor conocimiento)
 
--Intermediarios Punto de compatibilidad de un módulo con otro. (Patrón proxy, adapter, etc.)
+- Intermediarios Punto de compatibilidad de un módulo con otro. (Patrón proxy, adapter, etc.)
 
 ## DIFERIR ENLACE
 No enlazar las dependencias en tiempo de compilación si no en tiempo de ejecución o momento de carga del sistema, permite que estos sistemas
@@ -197,17 +197,17 @@ sean más mantenibles. Permite desplegar o compilar los componentes de forma ind
 
 Diferir enlace: Cómo hacer para que un cambio en código no requiere hacer un despliegue de toda nuestra aplicación. Aplazar el tiempo de enlace es compatible con los escenarios previamente mencionados a costa de requerir infraestructura adicional para admitir el enlace tardío (Importante aplicación en Programación orientada a objetos)
 
--Registro en ejecución – Permite desplegar servicios independientemente.
+- Registro en ejecución – Permite desplegar servicios independientemente.
 
--Archivos de configuración – Sirven para saber cómo conectar varias partes (nuestros módulos deben depender de interfaces). (arquitectura plug-ins)
+- Archivos de configuración – Sirven para saber cómo conectar varias partes (nuestros módulos deben depender de interfaces). (arquitectura plug-ins)
 	Se implementa mediante una interface.
 	
--Polimorfismo – Es el que un objeto pueda comportarse de manera diferente dependiendo de su estado. (el estado “state”)
+- Polimorfismo – Es el que un objeto pueda comportarse de manera diferente dependiendo de su estado. (el estado “state”)
 	Diferir un enlace dependiendo del estado de la instancia que se maneje variará el comportamiento.
 
--Remplazo de componentes – Capacidad de desplegar componentes sin necesidad de cambiar (el enlace y los componentes deben ser diferidos a la carga de la aplicación)
+- Remplazo de componentes – Capacidad de desplegar componentes sin necesidad de cambiar (el enlace y los componentes deben ser diferidos a la carga de la aplicación)
 
--Adherir a protocolos – Permite tener un protocolo claro entre dos módulos sin necesidad de conocer la instancia específica
+- Adherir a protocolos – Permite tener un protocolo claro entre dos módulos sin necesidad de conocer la instancia específica
 	Definir esquemas de comunicación entre componentes que sean serializados y deserializados del otro lado. Puede ser un esquema xml, json, etc.
 	Esto permite adherir a protocolos que no cambian por mas que las dependencias de componentes si han cambiado.
 
@@ -228,27 +228,27 @@ Tenemos eventos, trabajamos con tácticas para controlar la eficiencia para dar 
 ## Demanda de recursos: 
 Cuando entra un evento cómo hacemos para que tenga los recursos disponibles y cuántos de ellos necesita.
 
--Mejorar la eficiencia computacional: Analizar los puntos donde no estamos siendo eficientes (recorrer listas)
+- Mejorar la eficiencia computacional: Analizar los puntos donde no estamos siendo eficientes (recorrer listas)
 
--Reducir sobrecarga: Cuántos pasos necesitamos para responder a un mismo evento y si podemos reducirla
+- Reducir sobrecarga: Cuántos pasos necesitamos para responder a un mismo evento y si podemos reducirla
 
--Manejar tasa de eventos: Cuántos eventos emitimos a un componente específico y saber si podemos reducir esa taza. (Filtrado de stream de datos)
+- Manejar tasa de eventos: Cuántos eventos emitimos a un componente específico y saber si podemos reducir esa taza. (Filtrado de stream de datos)
 
--Frecuencia de muestreo: Tiene que ver con el componente consumidor. Procesamos los eventos de manera agrupada en tareas únicas.
+- Frecuencia de muestreo: Tiene que ver con el componente consumidor. Procesamos los eventos de manera agrupada en tareas únicas.
 
 ## Gestión de recursos:
 Cuántos ponemos disponibles y cómo hacemos para que estén disponibles cuando se necesitan ¿Cómo aprovechamos nuestros recursos dentro de nuestros propios recursos?
 
--Concurrencia: Cómo paralelizar nuestro sistema (Data science)
+- Concurrencia: Cómo paralelizar nuestro sistema (Data science)
 
--Replicas: Cómo duplicamos el procesamiento o datos para mayor eficiencia (Caché, copias)
+- Replicas: Cómo duplicamos el procesamiento o datos para mayor eficiencia (Caché, copias)
 
--Aumentar recursos: Poder medir y saber cuándo crecer nuestros recursos (Amazon)
+- Aumentar recursos: Poder medir y saber cuándo crecer nuestros recursos (Amazon)
 
 ## Arbitraje de recursos:
 En caso de conflicto de eventos requiriendo los mismos recursos saber cómo y a quien administrar el recurso por orden de prioridad.
 
--Políticas de planificación de tareas: Decisión de dónde responden mis recursos ante eventos o si las postergo y agendo. Depende del orden, prioridad, entre otras cosas. (Aplicado a BD)
+- Políticas de planificación de tareas: Decisión de dónde responden mis recursos ante eventos o si las postergo y agendo. Depende del orden, prioridad, entre otras cosas. (Aplicado a BD)
 
 ## Seguridad 
 
@@ -257,29 +257,29 @@ Nuestro estimulo de entrada es un ataque, nuestras tácticas para controlar la s
 ## Detectar ataques: 
 Van a tratar de identificar que el estado actual de la aplicación está bajo un ataque, puede ser por medio de sensores.
 
--Detectores de intrusos: Ayuda a tener implementaciones para saber cuándo se está usando de manera no apropiada. Levantará alertas para tomar decisiones sobre nuestro sistema (pueden ser complejas, automatizadas o simples). Podremos ir descendiendo en niveles cuanto más complejo sea.
+- Detectores de intrusos: Ayuda a tener implementaciones para saber cuándo se está usando de manera no apropiada. Levantará alertas para tomar decisiones sobre nuestro sistema (pueden ser complejas, automatizadas o simples). Podremos ir descendiendo en niveles cuanto más complejo sea.
 
 Recuperación de ataques: Trata de tener bases o tácticas para regresar a un estado basal y también poder comprender cuáles fueron las acciones del atacante para poder evitarlas a futuro
 
--Restauración: Cómo hacemos para entender nuestros estados del sistema y entender qué pasa con mi sistema. Es muy similar a la estrategia de Disponibilidad (estados conocidos, estados diferentes para comparar)
+- Restauración: Cómo hacemos para entender nuestros estados del sistema y entender qué pasa con mi sistema. Es muy similar a la estrategia de Disponibilidad (estados conocidos, estados diferentes para comparar)
 
--Identificación: Saber qué específicamente hizo el atacante. La traza de auditoria sirve para que cuando detectamos un atacante tengamos todo el rastro de nuestro usuario y poder restablecer mi sistema a ese punto basal, ignorando lo que hizo el atacante
+- Identificación: Saber qué específicamente hizo el atacante. La traza de auditoria sirve para que cuando detectamos un atacante tengamos todo el rastro de nuestro usuario y poder restablecer mi sistema a ese punto basal, ignorando lo que hizo el atacante
     Traza de auditoria: Replicar las acciones del usuario pero  no del atacante.
     
 ## Resistencia de ataques: 
 Va a tratar que el atacante no tenga éxito.
 
--Autenticación: Cómo sabemos que el usuario es quien realmente die ser (Contraseñas, datos biométricos, RS, etc.)
+- Autenticación: Cómo sabemos que el usuario es quien realmente die ser (Contraseñas, datos biométricos, RS, etc.)
 
--Autorización: Saber quién es y qué puede o no hacer esa persona (Roles entre sistemas)
+- Autorización: Saber quién es y qué puede o no hacer esa persona (Roles entre sistemas)
 
--Confidencialidad de datos: Cómo garantizamos que el dato sea visto por quien debe verlo (encriptación)
+- Confidencialidad de datos: Cómo garantizamos que el dato sea visto por quien debe verlo (encriptación)
 
--Integridad: Cómo garantizo que el mensaje es íntegro, es decir, cómo el emisor lo envió (Hashes para comprobar información)
+- Integridad: Cómo garantizo que el mensaje es íntegro, es decir, cómo el emisor lo envió (Hashes para comprobar información)
 
--Limitar exposición: Si un atacante entra podemos determinar que este no pueda (por lo menos) entrar a consultar la información más sensible del usuario. Lo podemos hacer separando información (separar info sensible de info “normal”).
+- Limitar exposición: Si un atacante entra podemos determinar que este no pueda (por lo menos) entrar a consultar la información más sensible del usuario. Lo podemos hacer separando información (separar info sensible de info “normal”).
 
--Limitar acceso: Entender cuáles son los vectores de acceso y restringir lo menor posible esos accesos que pueden ser puntos iniciales de penetración (Puertos de red: 8080, SSH, etc.)
+- Limitar acceso: Entender cuáles son los vectores de acceso y restringir lo menor posible esos accesos que pueden ser puntos iniciales de penetración (Puertos de red: 8080, SSH, etc.)
 
 ## Escenarios: Capacidad de prueba
 Nuestro estimulo de entrada será una nueva funcionalidad para implementar, tendremos técnicas para controlar la capacidad de prueba y nuestro resultado será detectar fallas para repararla y volver a iterar. Tendremos dos grandes familias, entradas/salidas y monitoreo que tiene en cuenta más que nada la ejecución.
@@ -289,10 +289,10 @@ Cómo hacer para dado un estímulo de entrada, evaluar una salida.
 
 - Captura y reproducción: Sirve para, en un escenario de comunicación, grabarla para poder usar esa comunicación en un test de prueba. De esta forma podemos garantizar que el uso normal está cubierto por un test y sabemos qué es lo que tiene que dar mi sistema. Es muy útil cuando queremos trabajar con sistemas externos. VCR (librería: video cam recording) es una herramienta muy útil aquí.
 
--Separar la interfaz de la implementación: De esta forma podemos evaluar si la implementación está recibiendo lo que se espera. Podemos hacer pruebas con diferentes implementaciones.
+- Separar la interfaz de la implementación: De esta forma podemos evaluar si la implementación está recibiendo lo que se espera. Podemos hacer pruebas con diferentes implementaciones.
 Llamados en software: Test, mocks, stubs.
 
--Acceso exclusivo para pruebas: Trata sobre partes de la aplicación que no podemos funcionar desde fuera de la aplicación, para esto es posible que tenga que escribir código específico para el contexto de test, es importante garantizar que no llegue a ambientes productivos.
+- Acceso exclusivo para pruebas: Trata sobre partes de la aplicación que no podemos funcionar desde fuera de la aplicación, para esto es posible que tenga que escribir código específico para el contexto de test, es importante garantizar que no llegue a ambientes productivos.
 Son útiles para probar microservicios
 
 ### Monitoreo interno: 
@@ -309,22 +309,22 @@ Separar la interfaz de usuario, Tendrá mucha relación con el patrón de manten
 ### Iniciativas de usuarios:
 Acciones que el usuario va a hacer y cómo el sistema puede ayudarlo.
 
--Cancelar: Permite al usuario el poder arrepentirse, implica una funcionalidad en sí misma ya que deberá poder ser cancelado el proceso. Algunos son muy rápidos.
+- Cancelar: Permite al usuario el poder arrepentirse, implica una funcionalidad en sí misma ya que deberá poder ser cancelado el proceso. Algunos son muy rápidos.
 
--Deshacer: Le permite al usuario regresar al estado anterior para revaluar la acción dentro del sistema, es consecuencia de que algunos sistemas no puedan dar “cancelar” porque los procesos son muy rápidos. En aplicaciones web son más difíciles ya que tienen más control en el estado del usuario.
+- Deshacer: Le permite al usuario regresar al estado anterior para revaluar la acción dentro del sistema, es consecuencia de que algunos sistemas no puedan dar “cancelar” porque los procesos son muy rápidos. En aplicaciones web son más difíciles ya que tienen más control en el estado del usuario.
 
--Agregación: Tiene que ver con entender cuando la funcionalidad que presentamos al usuario pudiera estar agrupada (cosas por ves o cosas por conjunto) permite la repetibilidad. (Excel, por ejemplo)
+- Agregación: Tiene que ver con entender cuando la funcionalidad que presentamos al usuario pudiera estar agrupada (cosas por ves o cosas por conjunto) permite la repetibilidad. (Excel, por ejemplo)
 
--Múltiples vistas: Cómo hacer para que el usuario solo tenga presente la información necesaria para realizar sus tareas de manera muy eficiente. (información menos o más detallada)
+- Múltiples vistas: Cómo hacer para que el usuario solo tenga presente la información necesaria para realizar sus tareas de manera muy eficiente. (información menos o más detallada)
 
 ### Iniciativas del sistema
 Desde el lado del sistema entender cuál es el estado actual del usuario y a partir de esa iniciativa dar Feedback.
 
--Modelo del usuario: Del lado del sistema entender el estado actual del usuario y enviar un mensaje que tenga sentido con ese estado. (Por ejemplo, un string en un formulario)
+- Modelo del usuario: Del lado del sistema entender el estado actual del usuario y enviar un mensaje que tenga sentido con ese estado. (Por ejemplo, un string en un formulario)
 
--Modelo del sistema: Implica qué sabemos de nosotros mismos como sistema. Cómo brindamos información sobre el estado de nuestro sistema (Por ejemplo, en carga de datos para ir notificando el progreso)
+- Modelo del sistema: Implica qué sabemos de nosotros mismos como sistema. Cómo brindamos información sobre el estado de nuestro sistema (Por ejemplo, en carga de datos para ir notificando el progreso)
 
--Modelo de la tarea: Cuánto entiende el sistema de la tarea que está realizando un cliente. (Por ejemplo, para ayudar al usuario a llevar a cabo una compra)
+- Modelo de la tarea: Cuánto entiende el sistema de la tarea que está realizando un cliente. (Por ejemplo, para ayudar al usuario a llevar a cabo una compra)
 
 # Validar las decisiones
 
@@ -389,4 +389,4 @@ Adherir a protocolos. Estándares de calidad\
 Confiabilidad. Tolerancia a fallos y capacidad de recuperación\
 Punto de control / retroceso - Entender cuando fallo y volver a un estado controlado\
 Sincronización de estado - Redundanca pasiva o activa y sincronizar las instancias para brindar un servicio continuo\
-Monitoreo de procesos - Garantizar que un proceso funcione\
+Monitoreo de procesos - Garantizar que un proceso funcione
