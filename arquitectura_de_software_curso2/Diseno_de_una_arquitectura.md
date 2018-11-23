@@ -304,7 +304,8 @@ El estímulo es el pedido de usuario, haremos uso de las tácticas para controla
 
 Separar la interfaz de usuario, Tendrá mucha relación con el patrón de mantenibilidad llamado coherencia semántica, vamos más específicamente a que cualquier modulo este separado de la interfaz de usuario, de forma que podamos mejorar la interfaz sin que se vea afectada la lógica de negocio o la estructura de datos.
 
-Iniciativas de usuarios, Acciones que el usuario va a hacer y cómo el sistema puede ayudarlo.
+### Iniciativas de usuarios:
+Acciones que el usuario va a hacer y cómo el sistema puede ayudarlo.
 
 -Cancelar: Permite al usuario el poder arrepentirse, implica una funcionalidad en sí misma ya que deberá poder ser cancelado el proceso. Algunos son muy rápidos.
 
@@ -314,8 +315,11 @@ Iniciativas de usuarios, Acciones que el usuario va a hacer y cómo el sistema p
 
 -Múltiples vistas: Cómo hacer para que el usuario solo tenga presente la información necesaria para realizar sus tareas de manera muy eficiente. (información menos o más detallada)
 
-Iniciativas del sistema, desde el lado del sistema entender cuál es el estado actual del usuario y a partir de esa iniciativa dar Feedback.
+### Iniciativas del sistema
+Desde el lado del sistema entender cuál es el estado actual del usuario y a partir de esa iniciativa dar Feedback.
 
 -Modelo del usuario: Del lado del sistema entender el estado actual del usuario y enviar un mensaje que tenga sentido con ese estado. (Por ejemplo, un string en un formulario)
+
 -Modelo del sistema: Implica qué sabemos de nosotros mismos como sistema. Cómo brindamos información sobre el estado de nuestro sistema (Por ejemplo, en carga de datos para ir notificando el progreso)
+
 -Modelo de la tarea: Cuánto entiende el sistema de la tarea que está realizando un cliente. (Por ejemplo, para ayudar al usuario a llevar a cabo una compra)
