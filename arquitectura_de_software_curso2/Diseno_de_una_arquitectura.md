@@ -281,7 +281,7 @@ Va a tratar que el atacante no tenga éxito.
 
 -Limitar acceso: Entender cuáles son los vectores de acceso y restringir lo menor posible esos accesos que pueden ser puntos iniciales de penetración (Puertos de red: 8080, SSH, etc.)
 
-## Capacidad de prueba
+## Escenarios: Capacidad de prueba
 Nuestro estimulo de entrada será una nueva funcionalidad para implementar, tendremos técnicas para controlar la capacidad de prueba y nuestro resultado será detectar fallas para repararla y volver a iterar. Tendremos dos grandes familias, entradas/salidas y monitoreo que tiene en cuenta más que nada la ejecución.
 
 ### Entrada/Salida: Cómo hacer para dado un estímulo de entrada, evaluar una salida.
@@ -298,3 +298,24 @@ Son útiles para probar microservicios
 Tendrá en cuenta la ejecución y que se está ejecutando exitosamente
 
 Monitoreo incorporado
+
+## Escenarios: Usabilidad
+El estímulo es el pedido de usuario, haremos uso de las tácticas para controlar la usabilidad y nuestra respuesta esperada será que tendremos información y asistencia adecuada al usuario. Estará dividida en tres familias:
+
+Separar la interfaz de usuario, Tendrá mucha relación con el patrón de mantenibilidad llamado coherencia semántica, vamos más específicamente a que cualquier modulo este separado de la interfaz de usuario, de forma que podamos mejorar la interfaz sin que se vea afectada la lógica de negocio o la estructura de datos.
+
+Iniciativas de usuarios, Acciones que el usuario va a hacer y cómo el sistema puede ayudarlo.
+
+-Cancelar: Permite al usuario el poder arrepentirse, implica una funcionalidad en sí misma ya que deberá poder ser cancelado el proceso. Algunos son muy rápidos.
+
+-Deshacer: Le permite al usuario regresar al estado anterior para revaluar la acción dentro del sistema, es consecuencia de que algunos sistemas no puedan dar “cancelar” porque los procesos son muy rápidos. En aplicaciones web son más difíciles ya que tienen más control en el estado del usuario.
+
+-Agregación: Tiene que ver con entender cuando la funcionalidad que presentamos al usuario pudiera estar agrupada (cosas por ves o cosas por conjunto) permite la repetibilidad. (Excel, por ejemplo)
+
+-Múltiples vistas: Cómo hacer para que el usuario solo tenga presente la información necesaria para realizar sus tareas de manera muy eficiente. (información menos o más detallada)
+
+Iniciativas del sistema, desde el lado del sistema entender cuál es el estado actual del usuario y a partir de esa iniciativa dar Feedback.
+
+-Modelo del usuario: Del lado del sistema entender el estado actual del usuario y enviar un mensaje que tenga sentido con ese estado. (Por ejemplo, un string en un formulario)
+-Modelo del sistema: Implica qué sabemos de nosotros mismos como sistema. Cómo brindamos información sobre el estado de nuestro sistema (Por ejemplo, en carga de datos para ir notificando el progreso)
+-Modelo de la tarea: Cuánto entiende el sistema de la tarea que está realizando un cliente. (Por ejemplo, para ayudar al usuario a llevar a cabo una compra)
