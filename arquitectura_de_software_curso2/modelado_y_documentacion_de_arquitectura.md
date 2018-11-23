@@ -29,13 +29,14 @@ La “fuente de la verdad” va a ser el código y no el documento de arquitectu
 Las posibles estrategias son las siguientes:
 
 - Ignorar la divergencia:
-Aplica cuando el equipo de trabajo es pequeño y mientras todos conozcan la difernecia entre el modelo de la arquitecura y la implementación consiste en mantener el documento de arquitectura tal y como se encuentra concebido, sabiendo que es lo que hace falta completar y que está en el código fuente.
+Aplica cuando el equipo de trabajo es pequeño y mientras todos conozcan la diferencia entre el modelo de la arquitecura y la implementación consiste en mantener el documento de arquitectura tal y como se encuentra concebido, sabiendo que es lo que hace falta completar y que está en el código fuente.
 
 - Modelado Ad-hoc:
 Se tiene una idea de la diferencia entre el modelado y el código fuente, de tal forma que se puede enunciar el modelo de arquitectura a pesar de que no se encuentra en el documento.
 
 - Modelos de alto nivel:
 Se puede seguir modelando la arquitectura con modelos de alto nivel que tienden a cambiar menos y por ende, son más baratos.
+En agile: en cada spring, cada dos springs, etc.
 
 - Sincronización en hitos del ciclo de vida:
 Consiste en actualizar el modelo de arquitectura en algún punto del ciclo de vida de la aplicación. Permite versionar el modelo de arquitectura y saber en cada momento del proyecto cual era el estado del modelo de arquitectura.
