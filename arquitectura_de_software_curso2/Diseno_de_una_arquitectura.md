@@ -284,15 +284,17 @@ Va a tratar que el atacante no tenga éxito.
 ## Capacidad de prueba
 Nuestro estimulo de entrada será una nueva funcionalidad para implementar, tendremos técnicas para controlar la capacidad de prueba y nuestro resultado será detectar fallas para repararla y volver a iterar. Tendremos dos grandes familias, entradas/salidas y monitoreo que tiene en cuenta más que nada la ejecución.
 
-- Entrada/Salida: Cómo hacer para dado un estímulo de entrada, evaluar una salida.
+### Entrada/Salida: Cómo hacer para dado un estímulo de entrada, evaluar una salida.
 
--Captura y reproducción: Sirve para, en un escenario de comunicación, grabarla para poder usar esa comunicación en un test de prueba. De esta forma podemos garantizar que el uso normal está cubierto por un test y sabemos qué es lo que tiene que dar mi sistema. Es muy útil cuando queremos trabajar con sistemas externos. VCR (librería: video cam recording) es una herramienta muy útil aquí.
+- Captura y reproducción: Sirve para, en un escenario de comunicación, grabarla para poder usar esa comunicación en un test de prueba. De esta forma podemos garantizar que el uso normal está cubierto por un test y sabemos qué es lo que tiene que dar mi sistema. Es muy útil cuando queremos trabajar con sistemas externos. VCR (librería: video cam recording) es una herramienta muy útil aquí.
 
 -Separar la interfaz de la implementación: De esta forma podemos evaluar si la implementación está recibiendo lo que se espera. Podemos hacer pruebas con diferentes implementaciones.
+Llamados en software: Test, mocks, stubs.
 
 -Acceso exclusivo para pruebas: Trata sobre partes de la aplicación que no podemos funcionar desde fuera de la aplicación, para esto es posible que tenga que escribir código específico para el contexto de test, es importante garantizar que no llegue a ambientes productivos.
 Son útiles para probar microservicios
 
-Monitoreo: Tendrá en cuenta la ejecución y que se está ejecutando exitosamente
+### Monitoreo interno: Significa incorporar a la misma aplicación funcionalidades que nos permiten tener información de lo que se está ejecutando para mantener el control de lo que está consumiendo cada aplicación
+Tendrá en cuenta la ejecución y que se está ejecutando exitosamente
 
-Monitoreo interno: Significa incorporar a la misma aplicación funcionalidades que nos permiten tener información de lo que se está ejecutando para mantener el control de lo que está consumiendo cada aplicación
+Monitoreo incorporado
