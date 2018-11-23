@@ -342,3 +342,51 @@ Atributo de calidad -> metrica -> Pruebas automatizadas -> Umbrales -> revision
 Recordar que la arquitectura surge de un equipo autogestionado.
 
 <p align-text="center"><img src="./validacion.png" width=500/></p>
+
+# Ejemplo aplicado del diseño de arquitectura:
+
+Fase Startup\
+Confiabilidad. Madurez y disponibilidad\
+Latido - Mensaje de que está disponible\
+Excepciones - Identifica cuándo ocurrio un error\
+Transacciones - Base de datos relacional, atomicidad e integridad de datos\
+Redundancia pasiva - Copias disponibles
+
+Seguridad\
+Autenticación - Permitir acceso a los usuarios dandonos información de su persona\
+Confidencialidad de datos - Proteger la información de los clientes y su acceso a los datos\
+Restauración - Garantizar que se puede recuperar un estado anterior
+
+Fase de crecimiento\
+Eficiencia de ejecución. Uso de recursos y capacidad\
+Frecuencia de muestreo - Controlar recursos\
+Manejar la tasa de eventos - Controlar eventos que ingresan a la vez\
+Concurrencia - Procesar eventos de forma paralela\
+Replicas - Garantiza la disponibilidad\
+Compatibilidad. Interoperabilidad\
+Separar interfaz de implementación - Desacoplar\
+Ocultar información - Sólo exponer la información necesaria\
+Implementar estándares - (REST o GraphQL)\
+Documentar\
+
+Seguridad. Comprobación de hechos, traza de responsabilidad, confidencialidad\
+Traza de auditoria - Qué paso y quién lo hizo\
+Limitar el acceso - Determinar quién tiene acceso a que\
+Detección de intrusos - Detectar que paso y cuando fue que alguién entro\
+Autorización\
+
+Fase de gran escala\
+Usabilidad. Accesibilidad, reconocimiento de idoneidad, operabilidad\
+Separar interfaz de usuario - Separar que es lo que se ve y que es lo que se hace\
+Modelo de usuario - Accesibilidad - Quién lo hace\
+Modelo de tarea - Qué hace\
+Múltiples vistas - Operabilidad - Qué usuario y que necesita de acuerdo a sus requerimientos de información\
+Mantenibilidad. Modularidad, capacidad de prueba, capacidad de modificación\
+Abstraer servicios comúnes - Identificar cuándo tenemos código común y abstraerlo a un servicio. Microservicios\
+Restringir la comunicación - Se más estrictos sobre la comunicación entre servicios con el fin de separar equipos para que puedan trabajar de forma independiente\
+Intermediarios. Compatibilizar comunicación\
+Adherir a protocolos. Estándares de calidad\
+Confiabilidad. Tolerancia a fallos y capacidad de recuperación\
+Punto de control / retroceso - Entender cuando fallo y volver a un estado controlado\
+Sincronización de estado - Redundanca pasiva o activa y sincronizar las instancias para brindar un servicio continuo\
+Monitoreo de procesos - Garantizar que un proceso funcione\
