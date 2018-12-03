@@ -37,3 +37,10 @@ Alexander dice:
 ## ¿Cuales son las ventajas de los patrones de diseño?
 Ayuda a crear arquitecturas de software complejas y heterogéneas, pero a su vez flexibles y reutilizables. También, favorece la evolución y mantenibilidad del software.
 
+Un patrón de diseño no es:
+
+- Un paradigma de programación.
+- Un silver bullet. No es una solución infalible para todo problema.
+- Una solución inefectiva y riesgosa.
+- No resuelve un problema específico.
+- No depende del lenguaje de implementación.
