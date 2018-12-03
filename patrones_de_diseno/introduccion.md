@@ -29,3 +29,11 @@ Aunque nuestra aplicación sea única, tendrá partes comunes con otras aplicaci
 ## índrome de la bala de plata
 No dejes que los equipos confíen demasiado en una nueva técnica, herramienta, etc. como si fuera la solución de todos los problemas. Las balas de plata no existen en informática; no creas lo que te venden los comerciales
 
+## A pattern Langauge book quote
+Alexander dice:
+
+"Cada patrón describe un problema que ocurre una y otra vez en nuestro medio ambiente y, a continuación describe el núcleo de la solución a ese problema, de tal manera que se puede utilizar esta solución un millón de veces, sin tener que hacerlo de la misma manera dos veces".
+
+## ¿Cuales son las ventajas de los patrones de diseño?
+Ayuda a crear arquitecturas de software complejas y heterogéneas, pero a su vez flexibles y reutilizables. También, favorece la evolución y mantenibilidad del software.
+
