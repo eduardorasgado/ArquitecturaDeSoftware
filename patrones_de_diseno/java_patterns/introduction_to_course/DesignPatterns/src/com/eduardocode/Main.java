@@ -31,16 +31,21 @@ public class Main {
         // enable
         // focus
         // setPosition
-        TextBox textBox = new TextBox();
-        textBox.enable();
-        textBox.draw();
+        drawUIControl(new TextBox());
+        drawUIControl(new CheckBox());
     }
 
     public static TaxCalculator getCalCulator() {
         return new TaxCalculator2019();
     }
 
+
     public static TaxCalculator getActualCalCulator() {
         return new TaxCalculator2020();
+    }
+
+    // you can set textbox or checkbox in control case, it is polymorphism
+    public static void drawUIControl(UIControl control) {
+        control.draw();
     }
 }
