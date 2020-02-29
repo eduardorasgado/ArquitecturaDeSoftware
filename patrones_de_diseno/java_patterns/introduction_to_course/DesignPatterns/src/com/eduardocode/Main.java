@@ -33,6 +33,7 @@ public class Main {
         // setPosition
         TextBox textBox = new TextBox();
         textBox.enable();
+        textBox.draw();
     }
 
     public static TaxCalculator getCalCulator() {
