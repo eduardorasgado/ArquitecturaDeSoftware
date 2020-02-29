@@ -14,7 +14,25 @@ public class Main {
         System.out.println(calculator2.calculateTax());
 
         Account account = new Account();
+        account.deposit(10);
+        account.withdraw(5);
+        System.out.println(account.getBalance());
 
+        // abstraction
+        MailService mailService = new MailService();
+        mailService.sendEmail();
+
+        // inheritance
+
+        //textbox
+        // button
+        // checkbox
+
+        // enable
+        // focus
+        // setPosition
+        TextBox textBox = new TextBox();
+        textBox.enable();
     }
 
     public static TaxCalculator getCalCulator() {
