@@ -1,4 +1,5 @@
 import { HpPrinterDriver } from './hp-printer-driver';
+import { Database } from './database';
 
 class Main {
     public static main(): void {
@@ -11,6 +12,9 @@ class Main {
         else {
             console.log('two different drivers');
         }
+
+        const db = Database.getInstance();
+        console.log(db.query('select * from db...'));
     }
 }
 
