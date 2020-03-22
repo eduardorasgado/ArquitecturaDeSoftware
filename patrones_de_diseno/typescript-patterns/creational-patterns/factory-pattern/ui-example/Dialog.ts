@@ -7,13 +7,21 @@ import {Button} from "./Button";
  * @class
  */
 abstract class Dialog {
-    // Note that, despite its name, the creator's primary
-    // responsibility isn't creating products. It usually
-    // contains some core business logic that relies on product
-    // objects returned by the factory method. Subclasses can
-    // indirectly change that business logic by overriding the
-    // factory method and returning a different type of product
-    // from it.
+
+    /**
+     * @description
+     * ======== FACTORY METHOD ========
+     * As abstract method
+     * This method is implemented by concrete dialogs
+     *
+     * Note that, despite its name, the creator's primary
+     * responsibility isn't creating products. It usually
+     * contains some core business logic that relies on product
+     * objects returned by the factory method. Subclasses can
+     * indirectly change that business logic by overriding the
+     * factory method and returning a different type of product
+     * from it.
+     */
     abstract createButton(): Button;
 
     render(): void {
@@ -22,3 +30,5 @@ abstract class Dialog {
         okButton.render();
     }
 }
+
+export { Dialog };
