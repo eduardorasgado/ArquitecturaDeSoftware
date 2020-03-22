@@ -11,7 +11,7 @@ class WindowsDialog extends Dialog {
     /**
      * Factory method implementation that return a Windows button
      */
-    createButton(): Button {
+    protected createButton(): Button {
         return new WindowsButton();
     }
 

@@ -14,7 +14,7 @@ class UIApplication {
         this.windowed = windowed;
     }
 
-    initialize(theme: string): void {
+    private initialize(theme: string): void {
         if(theme === undefined || theme === null) return undefined;
         else if(theme.toUpperCase() === "WINDOWS")
             this.dialog = new WindowsDialog();
@@ -25,7 +25,7 @@ class UIApplication {
         return undefined;
     }
 
-    main(theme: string): void {
+    public main(theme: string): void {
         if(theme !== undefined) {
             this.initialize(theme)
             this.dialog.render();
@@ -34,3 +34,5 @@ class UIApplication {
         else return undefined;
     }
 }
+
+export { UIApplication };

@@ -9,14 +9,14 @@ class MaterializeButton implements Button {
     /**
      * @override
      */
-    onClick(): void {
+    public onClick(): void {
         console.log("[MATERIALIZE] click");
     }
 
     /**
      * @override
      */
-    render(): void {
+    public render(): void {
         console.log("[MATERIALIZE] Rendering");
     }
 

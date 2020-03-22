@@ -7,7 +7,7 @@ class MaterializeDialog extends Dialog{
     /**
      * Factory method implementation that return a Materialize button
      */
-    createButton(): Button {
+    protected createButton(): Button {
         return new MaterializeButton();
     }
 }

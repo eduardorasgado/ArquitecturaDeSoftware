@@ -9,14 +9,14 @@ class WindowsButton implements Button {
     /**
      * @override
      */
-    onClick(): void {
+    public onClick(): void {
         console.log("[WINDOWS] click");
     }
 
     /**
      * @override
      */
-    render(): void {
+    public render(): void {
         console.log("[WINDOWS] Rendering");
     }
 

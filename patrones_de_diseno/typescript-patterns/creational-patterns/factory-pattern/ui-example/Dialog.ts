@@ -22,9 +22,9 @@ abstract class Dialog {
      * factory method and returning a different type of product
      * from it.
      */
-    abstract createButton(): Button;
+    protected abstract createButton(): Button;
 
-    render(): void {
+    public render(): void {
         let okButton: Button = this.createButton();
         okButton.onClick();
         okButton.render();

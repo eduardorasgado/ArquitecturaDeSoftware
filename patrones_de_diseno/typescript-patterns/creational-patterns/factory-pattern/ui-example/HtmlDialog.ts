@@ -7,7 +7,7 @@ class HtmlDialog extends Dialog{
     /**
      * Factory method implementation that return a HTML button
      */
-    createButton(): Button {
+    protected createButton(): Button {
         return new HTMLButton();
     }
 
