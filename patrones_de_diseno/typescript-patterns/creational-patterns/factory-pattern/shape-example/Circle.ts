@@ -5,7 +5,7 @@ class Circle implements Shape{
     /**
      * @override
      */
-    draw(): void {
+    public draw(): void {
         console.log('Inside circle.draw() method.');
     }
 

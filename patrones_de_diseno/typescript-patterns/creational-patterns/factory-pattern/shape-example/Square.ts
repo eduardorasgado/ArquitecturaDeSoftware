@@ -5,7 +5,7 @@ class Square implements Shape{
     /**
      * @override
      */
-    draw(): void {
+    public draw(): void {
         console.log('Inside Square.draw() method.');
     }
 

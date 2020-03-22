@@ -11,6 +11,11 @@ import {Square} from "./Square";
 class ShapeFactory{
     constructor() {}
 
+    /**
+     * creating an instance that implements Shape, given certain parameter.
+     *
+     * @param shapeType
+     */
     public getShape(shapeType: string): Shape {
         if(shapeType == null) return null;
         if(shapeType.toUpperCase() === "CIRCLE") return new Circle();
