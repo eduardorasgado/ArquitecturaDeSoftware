@@ -16,14 +16,14 @@ class SQLServerConnection implements Connection {
     /**
      * @override
      */
-    conectar(): void {
+    connect(): void {
         console.log("[SQLSERVER] DB CONNECTED");
     }
 
     /**
      * @override
      */
-    desconectar(): void {
+    disconnect(): void {
         console.log("[SQLSERVER] DB DISCONNECTED");
     }
 

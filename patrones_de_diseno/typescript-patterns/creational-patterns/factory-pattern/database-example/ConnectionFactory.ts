@@ -20,7 +20,8 @@ class ConnectionFactory {
      */
     public getConnection(dbProvider: string): Connection {
 
-        if(dbProvider === null) return new EmptyConnection();
+        if(dbProvider === null || dbProvider === undefined)
+            return new EmptyConnection();
 
         if(dbProvider.toUpperCase() === "MYSQL")
             return new MySQLConnection();
@@ -34,3 +35,5 @@ class ConnectionFactory {
         return new EmptyConnection();
     }
 }
+
+export { ConnectionFactory };

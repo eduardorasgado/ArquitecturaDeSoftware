@@ -16,14 +16,14 @@ class OracleConnection implements Connection {
     /**
      * @override
      */
-    conectar(): void {
+    connect(): void {
         console.log("[ORACLE] DB CONNECTED");
     }
 
     /**
      * @override
      */
-    desconectar(): void {
+    disconnect(): void {
         console.log("[ORACLE] DB DISCONNECTED");
     }
 

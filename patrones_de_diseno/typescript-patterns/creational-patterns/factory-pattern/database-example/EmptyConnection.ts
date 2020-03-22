@@ -6,14 +6,14 @@ class EmptyConnection implements Connection{
     /**
      * @override
      */
-    conectar(): void {
+    connect(): void {
         console.log("[EMPTY] PROVIDER NOT SPECIFIED");
     }
 
     /**
      * @override
      */
-    desconectar(): void {
+    disconnect(): void {
         console.log("[EMPTY] PROVIDER NOT SPECIFIED");
     }
 

@@ -16,14 +16,14 @@ class PostgreSQLConnection implements Connection {
     /**
      * @override
      */
-    conectar(): void {
+    connect(): void {
         console.log("[POSTGRESQL] DB CONNECTED");
     }
 
     /**
      * @override
      */
-    desconectar(): void {
+    disconnect(): void {
         console.log("[POSTGRESQL] DB DISCONNECTED");
     }
 

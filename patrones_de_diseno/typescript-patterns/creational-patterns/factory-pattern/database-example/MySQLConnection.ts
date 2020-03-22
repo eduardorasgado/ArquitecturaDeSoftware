@@ -19,7 +19,7 @@ class MySQLConnection implements Connection {
      *
      * @override
      */
-    conectar(): void {
+    connect(): void {
         console.log("[MYSQL] DB CONNECTED");
     }
 
@@ -27,7 +27,7 @@ class MySQLConnection implements Connection {
      * @override
      * Logic to disconnect to mysql db.
      */
-    desconectar(): void {
+    disconnect(): void {
         console.log("[MYSQL] DB DISCONNECTED.");
     }
 

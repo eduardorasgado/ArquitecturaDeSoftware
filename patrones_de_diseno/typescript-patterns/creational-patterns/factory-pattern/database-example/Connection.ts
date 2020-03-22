@@ -1,6 +1,6 @@
 interface Connection {
-    conectar(): void;
-    desconectar(): void;
+    connect(): void;
+    disconnect(): void;
 }
 
 export { Connection };
