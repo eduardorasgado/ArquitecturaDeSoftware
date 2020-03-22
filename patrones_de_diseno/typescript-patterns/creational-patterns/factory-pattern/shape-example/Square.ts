@@ -1,6 +1,7 @@
 import {Shape} from "./Shape";
 
 class Square implements Shape{
+    constructor() { }
     /**
      * @override
      */
