@@ -12,3 +12,5 @@ class HtmlDialog extends Dialog{
     }
 
 }
+
+export { HtmlDialog };

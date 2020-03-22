@@ -10,5 +10,6 @@ class MaterializeDialog extends Dialog{
     createButton(): Button {
         return new MaterializeButton();
     }
-
 }
+
+export { MaterializeDialog };
